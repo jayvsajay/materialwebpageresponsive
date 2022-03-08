@@ -6,7 +6,10 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+.reg{
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+  height: 650px;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
