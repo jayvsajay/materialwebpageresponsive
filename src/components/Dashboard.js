@@ -10,17 +10,17 @@ export default function Dashboard() {
         <Grid container sx={{padding:"1%"}}>
         <Grid item md={3} sm={6} xs={12} sx={{padding:"1%"}}>
            
-            <Paper elevation={3}>
+            <Paper elevation={3} sx={{height:"100%"}}>
                 <h2 className="box-decoration-slice bg-gradient-to-r from-indigo-600 to-pink-500 text-white px-2 ...">My Account</h2>
             <Avatar
                 alt="profile pic"
                 src="./logo192.png"
-                sx={{ width:"50%", height: "50%" ,margin:"auto"}}
+                sx={{ width:"150px",height:"150px",margin:"auto"}}
                 />
                 <br/>
-                <Button className="w-50 justify-end">General</Button>
+                <Button className="text-left">General</Button>
                 <br/>
-                <Button className="w-50 justify-end">Edit Profile</Button>
+                <Button className="text-left">Edit Profile</Button>
                 <br/>
                 <Button className="w-50 justify-start" href="/changepassword">Change Password</Button>
                 <br/>
@@ -33,7 +33,7 @@ export default function Dashboard() {
             </Paper>
             </Grid>
             <Grid item md={3} sm={6} xs={12} sx={{padding:"1%"}}>
-            <Paper elevation={3}>
+            <Paper elevation={3} sx={{height:"100%"}}>
             <h2 className="box-decoration-clone bg-gradient-to-r from-indigo-600 to-pink-500 text-white px-2">Chat History</h2>
             <div className='flex'>
             <Avatar sx={{marginLeft:"2%"}}/> 

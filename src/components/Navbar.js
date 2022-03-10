@@ -8,6 +8,8 @@ import MenuIcon from '@mui/icons-material/Menu';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
+import { Badge } from '@mui/material';
+import MailIcon from '@mui/icons-material/Mail';
 export default function Navbar() {
     const [anchorEl, setAnchorEl] = React.useState(null);
     const handleClose = () => {
@@ -30,11 +32,14 @@ export default function Navbar() {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          <Typography variant="h6" sx={{ flexGrow: 1 }}>
             Photos
           </Typography>
           {/* {auth && ( */}
             <div>
+            <Badge badgeContent={4} color="secondary">
+  <MailIcon color="action" />
+</Badge>
               <IconButton
                 size="large"
                 aria-label="account of current user"
